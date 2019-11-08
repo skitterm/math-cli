@@ -2,9 +2,12 @@
   "name": "math-cli",
   "version": "1.0.0",
   "description": "A simple command-line application that performs some math.",
-  "main": "index.js",
+  "main": "bin/math.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "math": "bin/math.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/skitterm/math-cli/issues"
   },
-  "homepage": "https://github.com/skitterm/math-cli#readme"
+  "homepage": "https://github.com/skitterm/math-cli#readme",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
 }
