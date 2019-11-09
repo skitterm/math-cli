@@ -1,6 +1,6 @@
 # math-cli
 
-A simple command-line application that performs some math.
+A simple command-line application that performs some fun math.
 
 ## Setup
 
