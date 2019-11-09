@@ -73,3 +73,9 @@ A decimal number
 math decimal-to-percent .24
 24%
 ```
+
+## Reuse Experience
+
+I used the excellent [mathReuse](https://github.com/thh0003/mathReuse) library for the arithmetic calculations. I was a little confused at which version of the math file (es5 or es6) I should use, and how to import it. After looking in the `/examples` folder, I found a [sample](https://github.com/thh0003/mathReuse/blob/master/examples/ES5/node-server/app.js) that showed how to use the file with Node.js (I'm new to Node, so some of this confusion may have been my lack of experience bringing in libraries).
+
+Due to the turnkey condition of the library, I was able to achieve white-box reuse.
