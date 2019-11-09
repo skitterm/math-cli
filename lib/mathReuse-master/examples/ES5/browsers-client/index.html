@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MathReuse Library Examples</title>
+    <script>var exports = {"__esModule": true};</script>
+    <script src="../../../build/math.js"></script>
+    <script>
+
+
+let mathRe = new MathReuse;
+
+function Add () {
+      let num1 = Number(document.getElementById('addInput1').value);
+      let num2 = Number(document.getElementById('addInput2').value);
+      let ans = mathRe.add(num1,num2);
+      document.getElementById('addResult').innerHTML= ans;
+    }
+
+function Subtract () {
+    let num1 = Number(document.getElementById('subInput1').value);
+    let num2 = Number(document.getElementById('subInput2').value);
+    let ans = mathRe.subtract(num1,num2);
+    document.getElementById('subResult').innerHTML= ans;
+    }
+
+function Multiply (){
+    let num1 = Number(document.getElementById('multInput1').value);
+    let num2 = Number(document.getElementById('multInput2').value);
+    let ans = mathRe.multiply(num1,num2);
+    document.getElementById('multResult').innerHTML= ans;
+    }
+
+function Divide () {
+    let num1 = Number(document.getElementById('divInput1').value);
+    let num2 = Number(document.getElementById('divInput2').value);
+    let ans = mathRe.divide(num1,num2);
+    document.getElementById('divResult').innerHTML= ans;
+    }    
+
+function SqrRoot() {
+    let num1 = Number(document.getElementById('sqrInput1').value);
+    let ans = mathRe.sqrroot(num1);
+    document.getElementById('sqrResult').innerHTML= ans;
+    }      
+
+function Exp() {
+    let num1 = Number(document.getElementById('expInput1').value);
+    let num2 = Number(document.getElementById('expInput2').value);
+    let ans = mathRe.exp(num1,num2);
+    document.getElementById('expResult').innerHTML= ans;
+    }    
+    
+function Convert() {
+    let num1 = Number(document.getElementById('convInput1').value);
+    let num2 = Number(document.getElementById('convInput2').value);
+    let ans = mathRe.toBaseX(num1,num2);
+    document.getElementById('convResult').innerHTML= ans;
+    }
+
+    </script>
+  </head>
+  <body>
+    <div id="MathReuse">
+      <h1>MathReuse Javascript Library</h1>
+      <p>The MathReuse library provides the following math functions. Addition, Subtraction, Multiply, Division, Exponent, Square Root, and Base Conversion.  Its functions are described below</p>
+      <table>
+        <form>
+          <tr>
+            <th>Operator</th>
+            <th>Operand 1</th>
+            <th>Operand 2</th>
+            <th>Action</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td>Addition</td>
+            <td><input type="text" id="addInput1" value="6"></td>
+            <td><input type="text" id="addInput2" value="3"></td>
+            <td><input type="button" id="addAction" value="Add" onclick="Add()"></td>
+            <td id="addResult"></td>
+          </tr>
+          <tr>
+            <td>Subtraction</td>
+            <td><input type="text" id="subInput1" value="6"></td>
+            <td><input type="text" id="subInput2" value="3"></td>
+            <td><input type="button" id="subAction" value="Subtract" onclick="Subtract()"></td>
+            <td id="subResult"></td>
+          </tr>
+          <tr>
+            <td>Multiply</td>
+            <td><input type="text" id="multInput1" value="6"></td>
+            <td><input type="text" id="multInput2" value="3"></td>
+            <td><input type="button" id="multAction" value="Multiply" onclick="Multiply()"></td>
+            <td id="multResult"></td>
+          </tr>
+          <tr>
+            <td>Division</td>
+            <td><input type="text" id="divInput1" value="6"></td>
+            <td><input type="text" id="divInput2" value="3"></td>
+            <td><input type="button" id="divAction" value="Divide" onclick="Divide()"></td>
+            <td id="divResult"></td>
+          </tr>
+          <tr>
+            <td>Square Root</td>
+            <td><input type="text" id="sqrInput1" value="16"></td>
+            <td></td>
+            <td><input type="button" id="sqrAction" value="Square Root" onclick="SqrRoot()"></td>
+            <td id="sqrResult"></td>
+          </tr>
+          <tr>
+            <td>Exponent</td>
+            <td><input type="text" id="expInput1" value="6"></td>
+            <td><input type="text" id="expInput2" value="3"></td>
+            <td><input type="button" id="expAction" value="Exponent" onclick="Exp()"></td>
+            <td id="expResult"></td>
+          </tr>
+          <tr>
+            <td>Base Conversion</td>
+            <td>Base 10 <input type="text" id="convInput1" value="6"></td>
+            <td>Convert To Base <input type="text" id="convInput2" value="2"></td>
+            <td><input type="button" id="convAction" value="Convert" onclick="Convert()"></td>
+            <td id="convResult"></td>
+          </tr>
+        </form>
+      </table>
+    </div>
+  </body>
+</html>

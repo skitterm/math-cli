@@ -1,0 +1,41 @@
+{
+  "name": "mathreuse",
+  "version": "1.0.0",
+  "description": "Reusable Math Library",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha --require @babel/register 'test/**Spec.js'",
+    "build": "babel src/math.js -o build/math.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thh0003/mathReuse.git"
+  },
+  "author": "Trevor Holmes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thh0003/mathReuse/issues"
+  },
+  "homepage": "https://github.com/thh0003/mathReuse#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/register": "^7.6.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  }
+}
